@@ -74,6 +74,10 @@ The above command assumes that the tty opened for the Launchpad is named
 ttyAMC0. This is true for most machines, but you should always check to be
 sure.
 
+## Known Issues
+
+Please check the "Issues" tab for known issues and current workarounds.
+
 ## Dependencies
 
 You'll need the following programs installed on your machine:
