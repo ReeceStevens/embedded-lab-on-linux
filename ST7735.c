@@ -1544,39 +1544,39 @@ struct __FILE {
 FILE __stdout;
 
 // Print a character to ST7735 LCD.
-int fputc(int ch, FILE *f){
-  ST7735_OutChar(ch);
-  return ch;
-}
+/* int fputc(int ch, FILE *f){ */
+/*   ST7735_OutChar(ch); */
+/*   return ch; */
+/* } */
 
-int _write(int fd, const void* buf, int len) {
-    char* charbuf = (char*) buf;
-    int i;
-    for (i = 0; i < len; i ++) {
-        ST7735_OutChar(charbuf[i]);
-    }
-    return len;
-}
+/* int _write(int fd, const void* buf, int len) { */
+/*     char* charbuf = (char*) buf; */
+/*     int i; */
+/*     for (i = 0; i < len; i ++) { */
+/*         ST7735_OutChar(charbuf[i]); */
+/*     } */
+/*     return len; */
+/* } */
 
-int puts(const char* buf) {
-    int i = 0;
-    FILE* dummy = NULL;
-    while(buf[i]) {
-        fputc(buf[i], dummy);
-        i++;
-    }
-    return i;
-}
+/* int puts(const char* buf) { */
+/*     int i = 0; */
+/*     FILE* dummy = NULL; */
+/*     while(buf[i]) { */
+/*         fputc(buf[i], dummy); */
+/*         i++; */
+/*     } */
+/*     return i; */
+/* } */
 
-// No input from Nokia, always return data.
-int fgetc(FILE *f){
-  return 0;
-}
+/* // No input from Nokia, always return data. */
+/* int fgetc(FILE *f){ */
+/*   return 0; */
+/* } */
 
-// Function called when file error occurs.
-int (ferror) (FILE *f) {
-    return EOF;
-}
+/* // Function called when file error occurs. */
+/* int (ferror) (FILE *f) { */
+/*     return EOF; */
+/* } */
 
 // Abstraction of general output device
 // Volume 2 section 3.4.5

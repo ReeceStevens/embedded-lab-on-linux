@@ -37,6 +37,7 @@ void PortF_Init(void){
 int main() {
     PLL_Init(Bus80MHz);
     UART_Init();
+    PortF_Init();
     printf("Hello, world! Time to blink!\n\n");
     volatile uint32_t delay;
     while(1) {
