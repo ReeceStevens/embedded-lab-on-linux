@@ -1,5 +1,6 @@
 # Installation
-## Install brew, Package manager for MacOS
+
+## Install Homebrew, package manager for MacOS
 [Homebrew][brew]
 
 ```bash
@@ -7,7 +8,7 @@ xcode-select --install
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-## Install arm cross compiler
+## Install ARM cross-compiler
 [homebrew-arm][arm-cross]
 
 ```bash
@@ -15,7 +16,7 @@ brew tap osx-cross/arm
 brew install arm-gcc-bin
 ```
 
-## Installing lm4tools
+## Install lm4tools
 [lm4tools][lm4tools-link]
 
 ```bash
@@ -33,14 +34,14 @@ echo 'PATH=$PATH:'$PWD >> ~/.bashrc
 
 > NOTE: If you use ZSH, then update the append to the ~/.zshrc file instead of ~/.bashrc
 
-## Installing OpenOCD
-[OpenOCD][opencd-link]
+## Install OpenOCD
+[OpenOCD][openocd-link]
 
 ```bash
 brew install openocd
 ```
 
-## Installing Python 3
+## Install Python 3
 [Python][python]
 
 ```bash
@@ -54,7 +55,7 @@ Finally, you'll need to download [ValvanoWare][valvoware] and
 
 > NOTE: Download the `SW-TM4C: TivaWare for C Series Software (Complete)` exe by clicking *Get Software* and by filling out the form. Then open the .exe file and extract (I used the Unarchiver app) the `SW-TM4C-*` folder.
 
-# Testing
+# Test
 ```bash
 make clean && make
 make flash
