@@ -20,7 +20,6 @@ brew install arm-gcc-bin
 [lm4tools][lm4tools-link]
 
 ```bash
-cd lm4tools
 brew install libusb
 
 # In a directory of your choice
